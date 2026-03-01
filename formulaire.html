@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Instant gagnant Footlocker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="Form">
+    <img id="logo" src="img/logo.webp" alt="Logo Footlocker">
+
+    <form class="form" action="submit form" method="POST">
+        <h2>Vos informations</h2> 
+
+        <label for="email">Email*</label><br>
+        <input type="text" id="email" name="email" placeholder="votre@email.com"><br>
+    
+    <div class="duo">
+    <div class="champ">
+        <label for="prenom">Prénom*</label><br>
+        <input type="text" id="prenom" name="prenom" placeholder="Jean"><br>
+    </div>
+    <div class="champ">
+        <label for="nom">Nom*</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Dupont"><br>
+    </div>
+    </div>
+        <label for="telephone">Téléphone*</label><br>
+        <input type="text" id="telephone" name="telephone" placeholder="+33 6 76 89 45 12" required><br><br>
+
+        <div class="checkbox-container">
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <label for="rgpd">J'accepte les conditions RGPD *</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">M'inscrire à la newsletter FootLocker</label>
+        </div>
+
+    </div>
+
+        <a href="règlements.html" class="btncontinue">CONTINUER</a>
+    </form> 
+    
+</body>
