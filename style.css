@@ -9,7 +9,7 @@ body {
     background-color: #1a1a1a;
 }
 
-.Home > #logo, .Form > #logo, .Rules > #logo, .Game > #logo, .Scratch >#logo {
+.Home > #logo, .Form > #logo, .Rules > #logo, .Game > #logo, .Scratch >#logo, .Scratch1 > #logo, .Scratch2 > #logo, .Prize > #logo, .Prize1 >#logo, .Prize2 > #logo {
     position: absolute;
     width: 100px;
     height: auto;
@@ -45,14 +45,14 @@ body {
     font-size: 60px;
 }
 
-.Home > .content > #gr {
+.Home > .content > .gr {
     font-size: 40px;
     color: #A71E28;
     font-weight: 700;
     margin-top: 20px;
 }
 
-.Home > .content > #te {
+.Home > .content > .te {
     font-size: 40px;
     margin-top: -10px;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .form {
-    background-color: #1a1a1a; 
+    background-color: black; 
     color: white;
     padding: 40px;
     border-radius: 8px;
@@ -221,7 +221,7 @@ body {
 }
 
 .Rules > .content {
-    background-color: #1a1a1a; 
+    background-color: black; 
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -323,7 +323,7 @@ transform: translateY(-150px);
 
 .shoes {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     justify-content: flex-start;
     position: relative;
 }
@@ -335,27 +335,29 @@ transform: translateY(-150px);
     top: 100px;
 }
 
-.shoes img:nth-of-type(1) {
+.shoes a .orange {
     position: relative;
-    z-index: -40;
+    z-index: -30;
     margin-top: 20px;
+    transform: scale(1.1);
 }
 
-.shoes a img {
+.shoes .rouge {
     position: relative;
     z-index: 50;
     transform: scale(1.3);
 }
 
-.shoes img:nth-of-type(3) {
+.shoes a .vert {
     position: relative;
-    z-index: -40;
+    z-index: -30;
+    transform: scale(1.1);
     
 }
 
 
 /* 5. PAGE A GRATTER (.Scratch) */
-.Scratch  {
+.Scratch, .Scratch1, .Scratch2  {
     background-image: url('img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -366,4 +368,248 @@ transform: translateY(-150px);
     justify-content: center;
     align-items: center;
     padding: 100px 20px 40px 20px; 
+}
+
+.Scratch .shoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    position: relative;
+    justify-items: center;
+
+
+}
+
+.Scratch > .shoes > a img {
+    transform: scale(2);
+}
+
+.Scratch > .shoes > img {
+    transform: scale(0.5);
+}
+
+.Scratch1 .shoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    position: relative;
+    justify-items: center;
+    
+
+}
+
+.Scratch1 > .shoes > a img {
+    transform: scale(2);
+}
+
+.Scratch1 > .shoes > img {
+    transform: scale(0.5);
+}
+
+.Scratch2 .shoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    position: relative;
+    justify-items: center;
+    
+
+}
+
+.Scratch2 > .shoes > a img {
+    transform: scale(3);
+}
+
+.Scratch2 > .shoes > img {
+    transform: scale(0.5);
+}
+
+
+
+
+
+/* 6. PAGE Récompense (.Prize) */
+.Prize, .Prize2 {
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 40px 20px; 
+}
+
+
+.Prize > .content {
+    background-color: black; 
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    font-weight: 200;
+    text-align: center;
+}
+
+.Prize > .content > .gr {
+    font-size: 20px;
+    color: #A71E28;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.Prize > .content > .te {
+    font-size: 15px;
+}
+
+.Prize .co {
+background-color: #181818;
+border: 2px solid #181818;
+display: inline-block;
+padding: 20px;
+
+}
+
+.Prize .btn {
+    margin-top: 30px;
+    background-color: #A71E28;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Prize .btn:hover {
+    background-color: #86171F; 
+}
+
+.Prize.sneaker-confetti {
+    position: relative;
+    display: inline-block;
+}
+
+
+.Prize1 {
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 20px; 
+    
+}
+
+.Prize1 .titre {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    
+}
+
+.Prize1 img {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.Prize1 > .content {
+    color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.Prize1 > .content > .gr {
+    font-size: 20px;
+    color: #A71E28;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.Prize1 > .content > .te {
+    font-size: 15px;
+}
+
+.Prize1 .btn {
+    margin-top: 30px;
+    background-color: #A71E28;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Prize1 .btn:hover {
+    background-color: #86171F; 
+}
+
+.sneaker-confetti {
+    position: relative;
+    display: inline-block;
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #86171F;
+    opacity: 0.9;
+    animation: fall 2s linear infinite, spin 1.5s linear infinite;
+}
+
+.confetti:nth-child(1) { left: 5%; animation-delay: 0s; background-color: #ff0055; }
+.confetti:nth-child(2) { left: 15%; animation-delay: 0.2s; background-color: #00ff77; }
+.confetti:nth-child(3) { left: 25%; animation-delay: 0.4s; background-color: #ffaa00; }
+.confetti:nth-child(4) { left: 35%; animation-delay: 0.6s; background-color: #ff00aa; }
+.confetti:nth-child(5) { left: 45%; animation-delay: 0.8s; background-color: #00aaff; }
+.confetti:nth-child(6) { left: 5%; animation-delay: 0s; background-color: #ff0055; }
+.confetti:nth-child(7) { left: 15%; animation-delay: 0.2s; background-color: #00ff77; }
+.confetti:nth-child(8) { left: 25%; animation-delay: 0.4s; background-color: #ffaa00; }
+.confetti:nth-child(9) { left: 35%; animation-delay: 0.6s; background-color: #ff00aa; }
+.confetti:nth-child(10) { left: 45%; animation-delay: 0.8s; background-color: #00aaff; }
+.confetti:nth-child(11) { left: 45%; animation-delay: 0.8s; background-color: #00aaff; }
+
+@keyframes fall {
+    0% {top: -10px; transform: translateX(0);}
+    100% {top: 100%; transform: translateX(30px);}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
